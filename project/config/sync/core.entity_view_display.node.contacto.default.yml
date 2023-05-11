@@ -1,0 +1,28 @@
+uuid: b14acb6d-4b97-4338-8f69-ea26c1bbbff8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.contacto.body
+    - node.type.contacto
+  module:
+    - text
+    - user
+id: node.contacto.default
+targetEntityType: node
+bundle: contacto
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

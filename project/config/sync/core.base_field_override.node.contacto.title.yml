@@ -1,0 +1,18 @@
+uuid: d68eded7-4e10-4d16-a43d-4cc1cb7d6726
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.contacto
+id: node.contacto.title
+field_name: title
+entity_type: node
+bundle: contacto
+label: 'Nombre del contacto'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
