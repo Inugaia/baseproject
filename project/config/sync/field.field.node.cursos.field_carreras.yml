@@ -1,0 +1,21 @@
+uuid: 1d45eaae-9ced-4c11-82dd-f4140439cbb6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_carreras
+    - node.type.cursos
+id: node.cursos.field_carreras
+field_name: field_carreras
+entity_type: node
+bundle: cursos
+label: 'Carreras asociadas'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings: {  }
+field_type: entity_reference

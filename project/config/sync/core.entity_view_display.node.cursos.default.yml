@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.cursos.body
+    - field.field.node.cursos.field_carreras
     - field.field.node.cursos.field_categoria
+    - field.field.node.cursos.field_codigo
     - field.field.node.cursos.field_programa
     - node.type.cursos
   module:
+    - options
     - text
     - user
 id: node.cursos.default
@@ -22,6 +25,14 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_carreras:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 105
+    region: content
   field_categoria:
     type: entity_reference_label
     label: above
@@ -29,6 +40,13 @@ content:
       link: true
     third_party_settings: {  }
     weight: 103
+    region: content
+  field_codigo:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 104
     region: content
   field_programa:
     type: entity_reference_entity_view

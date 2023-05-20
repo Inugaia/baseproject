@@ -1,0 +1,21 @@
+uuid: 0e6a514f-b02d-44a9-a893-4732ae35e7af
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_codigo
+field_name: field_codigo
+entity_type: node
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

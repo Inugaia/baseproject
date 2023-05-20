@@ -4,7 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.node.cursos.body
+    - field.field.node.cursos.field_carreras
     - field.field.node.cursos.field_categoria
+    - field.field.node.cursos.field_codigo
     - field.field.node.cursos.field_programa
     - node.type.cursos
   module:
@@ -32,6 +34,16 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_carreras:
+    type: entity_reference_autocomplete
+    weight: 125
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   field_categoria:
     type: entity_reference_autocomplete
     weight: 123
@@ -41,6 +53,12 @@ content:
       match_limit: 10
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_codigo:
+    type: options_select
+    weight: 124
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_programa:
     type: media_library_widget

@@ -1,0 +1,8 @@
+uuid: 0a1128cc-f295-4902-a04c-5bedca7d28e3
+langcode: en
+status: true
+dependencies: {  }
+name: Campus
+vid: campus
+description: 'Clasifica el campus donde se imparte el curso'
+weight: 0

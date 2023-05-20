@@ -1,21 +1,19 @@
-uuid: cc5485a6-8045-46ed-8ded-89948c21712b
+uuid: 0247be18-1103-4970-8ed8-d1e268bea05a
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.cursos.body
-    - field.field.node.cursos.field_carreras
-    - field.field.node.cursos.field_categoria
-    - field.field.node.cursos.field_codigo
-    - field.field.node.cursos.field_programa
-    - node.type.cursos
+    - field.field.node.carrera.body
+    - field.field.node.carrera.field_campus_que_se_
+    - field.field.node.carrera.field_ficha_profesional
+    - node.type.carrera
   module:
     - text
     - user
-id: node.cursos.teaser
+id: node.carrera.teaser
 targetEntityType: node
-bundle: cursos
+bundle: carrera
 mode: teaser
 content:
   body:
@@ -32,7 +30,5 @@ content:
     weight: 100
     region: content
 hidden:
-  field_carreras: true
-  field_categoria: true
-  field_codigo: true
-  field_programa: true
+  field_campus_que_se_: true
+  field_ficha_profesional: true

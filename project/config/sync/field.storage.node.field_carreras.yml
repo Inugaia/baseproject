@@ -1,0 +1,19 @@
+uuid: f61c9e77-09cd-4b95-a579-8a2b0df5caa0
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_carreras
+field_name: field_carreras
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 3
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

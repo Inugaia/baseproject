@@ -1,0 +1,21 @@
+uuid: 288805ed-6a60-4972-bfe1-d6248700412a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_campus_que_se_
+    - node.type.carrera
+id: node.carrera.field_campus_que_se_
+field_name: field_campus_que_se_
+entity_type: node
+bundle: carrera
+label: 'Campus que se imparte'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings: {  }
+field_type: entity_reference

@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Categoría
 vid: categoria
-description: ''
+description: 'Forma de clasificar el contenido de los cursos'
 weight: 0
